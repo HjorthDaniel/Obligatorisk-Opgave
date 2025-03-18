@@ -1,0 +1,92 @@
+﻿@page
+@model WebApplication2.Pages.KimLarsenModel
+@{
+    Layout = "_Layout"; // Angiver, at denne side bruger en fælles layout-fil (_Layout.cshtml), som indeholder den overordnede struktur for siden.
+}
+
+<!DOCTYPE html>
+<html lang="da">
+<!-- Angiver, at dette er et HTML-dokument, og at sproget er dansk. -->
+<head>
+    <meta charset="UTF-8"> <!-- Definerer tegnkodningen for dokumentet som UTF-8, hvilket understøtter danske tegn. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sikrer, at siden tilpasser sig forskellige skærmstørrelser på mobil og desktop. -->
+    <title>Franz Berckerlee</title> <!-- Viser sidens titel i browsertabben. -->
+    <link rel="stylesheet" href="~/css/FranzBeckerlee.css"> <!-- Linker til en ekstern CSS-fil for at style siden. -->
+</head>
+<body>
+   
+    <header class="header">
+        <div class="container">
+            <h1>---------</h1>
+            <p class="subheader"></p>
+        </div>
+    </header>
+    <header class="header">
+    <!-- Indikerer begyndelsen af sidens indhold. -->
+
+
+    <header class="header">
+        <!-- Header-sektionen indeholder typisk sidens titel og intro. -->
+        <div class="container">
+            <!-- En wrapper, der hjælper med at styre layoutet og give en ensartet bredde. -->
+            <h1>Franz Beckerlee</h1> <!-- Hovedoverskrift, den vigtigste titel på siden. -->
+            <p class="subheader">En musikalsk legende fra Danmark</p> <!-- En kort underoverskrift, som beskriver emnet. -->
+        </div>
+    </header>
+
+    <section class="bio">
+        <!-- Sektion, der indeholder biografiske oplysninger om Kim Larsen. -->
+        <div class="container">
+            <!-- Holder indholdet inden for en bestemt bredde for bedre læsbarhed. -->
+            <h2>Kim Larsens liv og musik</h2> <!-- Overskrift på niveau 2, som introducerer denne sektion. -->
+            <p>
+                Kim Larsen (1945-2018) var en af Danmarks mest elskede og ikoniske musikere. Hans musik spænder over flere genrer, fra rock til folk,
+                og hans tekster har ramt mange danskere dybt i hjertet. Kim Larsen startede sin karriere med bandet Gasolin' i 1970'erne og havde senere
+                en succesfuld solokarriere. Han var kendt for sin stærke personlighed og sin evne til at formidle livets små og store oplevelser gennem sine sange.
+            </p> <!-- Afsnit, der beskriver Kim Larsens musikalske baggrund. -->
+            <p>
+                Kim Larsens mest kendte sange inkluderer "This Is My Life", "Jutlandia", og "Papirsklip", og hans koncerter trak tusindvis af fans,
+                hvilket gjorde ham til en central figur i dansk musik og kultur. Hans musik er stadig elsket af både gamle og unge generationer.
+            </p> <!-- Yderligere information om hans musik og betydning. -->
+        </div>
+    </section>
+
+    <!-- Video Sektion -->
+    <section class="video-section">
+        <!-- En sektion dedikeret til at vise en video med Kim Larsen. -->
+        <div class="container">
+            <!-- Holder videoen centreret og giver passende marginer. -->
+            <h2>Kim Larsen Live Performance</h2> <!-- Overskrift for video-sektionen. -->
+            <video width="100%" controls>
+                <!-- Video-element, der viser en video. "controls" tilføjer afspilningsknapper. -->
+                <source src="~/videos/Kim Larsen.mp4" type="video/mp4"> <!-- Kilden til videoen, som er placeret i wwwroot/videos. -->
+                Din browser understøtter ikke videoafspilning. <!-- Vises, hvis browseren ikke kan afspille videoen. -->
+            </video>
+        </div>
+    </section>
+
+    <section class="songs">
+        <!-- Sektion, der viser en liste over Kim Larsens populære sange. -->
+        <div class="container">
+            <!-- Hjælper med at holde layoutet konsistent. -->
+            <h2>Populære Sange</h2> <!-- Overskrift for sanglisten. -->
+            <ul>
+                <!-- Ul (unordered list) bruges til at vise en liste uden tal. -->
+                <li>"This Is My Life" - En af hans mest personlige sange.</li> <!-- Et listepunkt med en beskrivelse af sangen. -->
+                <li>"Jutlandia" - Et symbol på hans kærlighed til Danmark.</li> <!-- Endnu et listepunkt med en sang. -->
+                <li>"Papirsklip" - En sang om livets både smukke og smertefulde øjeblikke.</li> <!-- Listepunkt om sangens betydning. -->
+                <li>"Kald Det Kærlighed" - En af hans mest romantiske ballader.</li> <!-- Endnu en kendt sang i listen. -->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer-sektion, der vises nederst på siden, typisk med copyright eller kontaktinfo. -->
+        <div class="container">
+            <!-- Sikrer en ensartet bredde på indholdet i footeren. -->
+            <p>&copy; 2025 Kim Larsen Tribute. Alle rettigheder forbeholdes.</p> <!-- Copyright-tekst med aktuelt årstal. -->
+        </div>
+    </footer>
+
+</body> <!-- Afslutter sidens indhold. -->
+</html> <!-- Afslutter HTML-dokumentet. -->

@@ -1,0 +1,198 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="da">
+<header class="header">
+    <div class="container">
+        <h1>---------</h1>
+        <p class="subheader"></p>
+    </div>
+</header>
+<header class="header">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasolins Historie - Tidslinje</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #111; -- 
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 10px;
+            background: #1c1c1c;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            color: #f7d200;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            border-left: 3px solid #f7d200;
+            margin-left: 30px;
+        }
+
+        .event {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+            .event:last-child {
+                margin-bottom: 0;
+            }
+
+            .event::before {
+                content: '';
+                position: absolute;
+                left: -10px;
+                top: 0;
+                width: 20px;
+                height: 20px;
+                background-color: #f7d200;
+                border-radius: 50%;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
+
+        .event-content {
+            background-color: #262626;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            margin-left: 30px;
+            max-width: 600px;
+        }
+
+        .event-title {
+            font-size: 24px;
+            color: #f7d200;
+            margin-bottom: 10px;
+        }
+
+        .event-description {
+            font-size: 16px;
+            color: #b0b0b0;
+        }
+
+        .event-date {
+            font-size: 14px;
+            font-weight: bold;
+            color: #888;
+            margin-top: 15px;
+            text-align: right;
+        }
+
+        /* Media Queries for Responsiveness */
+        media (max-width: 0
+        px) {
+            .container
+
+        {
+            width: 95%;
+        }
+
+        .timeline {
+            padding-left: 20px;
+        }
+
+        .event-content {
+            margin-left: 20px;
+        }
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gasolins Historie</h1>
+
+        <div class="timeline">
+            <div class="event">
+                <div class="event-content">
+                    <div class="event-title">1900 - De første biler</div>
+                    <div class="event-description">
+                        Benzin som brændstof blev mere populært i begyndelsen af det 20. århundrede, da biler begyndte at blive masseproduceret.
+                    </div>
+                    <div class="event-date">1900</div>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-content">
+                    <div class="event-title">1920 - Massiv vækst i bilindustrien</div>
+                    <div class="event-description">
+                        I 1920'erne blev benzindrevne biler udbredt over hele verden, og brændstofforbruget steg hurtigt.
+                    </div>
+                    <div class="event-date">1920</div>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-content">
+                    <div class="event-title">1940 - Oliekrise</div>
+                    <div class="event-description">
+                        Under Anden Verdenskrig opstod den første større oliekrise, som fik konsekvenser for global brændstofproduktion og distribution.
+                    </div>
+                    <div class="event-date">1940</div>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-content">
+                    <div class="event-title">1973 - Den første oliekrise</div>
+                    <div class="event-description">
+                        Den første oliekrise opstod i 1973, hvilket førte til store stigninger i benzinpriserne og ændrede måden, verden betragtede olie på.
+                    </div>
+                    <div class="event-date">1973</div>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-content">
+                    <div class="event-title">2000 - Øget fokus på bæredygtighed</div>
+                    <div class="event-description">
+                        I 2000'erne begyndte verden at fokusere mere på bæredygtighed og alternative brændstoffer som et svar på stigende oliepriser og miljøpåvirkning.
+                    </div>
+                    <div class="event-date">2000</div>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-content">
+                    <div class="event-title">2025 - Fremtidens brændstoffer</div>
+                    <div class="event-description">
+                        I fremtiden er det forventet, at alternative brændstoffer som elektrisk energi og bio-brændstoffer vil dominere transportsektoren.
+                    </div>
+                    <div class="event-date">2025</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
