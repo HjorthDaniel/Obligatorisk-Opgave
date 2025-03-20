@@ -1,0 +1,121 @@
+﻿@page
+@model WebApplication2.Pages.SørenBerlevModel
+@{
+	Layout = "_Layout"; // Angiver, at denne side bruger en fælles layout-fil (_Layout.cshtml), som indeholder den overordnede struktur for siden.
+}
+
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8"> <!-- Definerer tegnkodningen for dokumentet som UTF-8, hvilket understøtter danske tegn. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sikrer, at siden tilpasser sig forskellige skærmstørrelser på mobil og desktop. -->
+    <title>Søren Berlev</title> <!-- Viser sidens titel i browsertabben. -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #CC5500;
+            background-image: url('pictures/goldenpicture.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 70px;
+            padding: 15px;
+            display: fixed;
+            justify-content: center;
+            align-items: center;
+            height: 110vh;
+            overflow-x: auto;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 10px;
+            background: #FFFFFF;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #f7d200;
+        }
+
+        .subheader {
+            text-align: center;
+            color: #f7d200;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .bio p {
+            font-size: 16px;
+            color: #b0b0b0;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .video-section video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .songs ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .songs ul li {
+                font-size: 16px;
+                color: #b0b0b0;
+                margin: 10px 0;
+            }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Søren "Charlie" Berlev<h1>
+
+        </header>
+
+        <section class="picture" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <img src="~/pictures/Sørenberlev.png" alt="Søren Berlev" width="300">
+
+            <section class="bio">
+                <h2>Den nye trommeslager </h2>
+
+                <p>
+                    Søren "Charlie" Berlev er en dansk musiker, der blev kendt som trommeslager i Gasolin. 
+                    Han overtog pladen for Bjørn Uglebjerg.
+                    Berlev spillede trommer på mange af Gasolin’s mest berømte albums, 
+                    herunder "Gasolin’ 3", "Gasolin’ 4" og "Stakkels Jim". Efter Gasolin' gik i opløsning i 1978,
+                    fortsatte han sin musikalske karriere med forskellige projekter, blandt andet med bands som Teddy & 
+                    the Tigers og The Savage Rose.
+
+
+                </p>
+                <p>
+                    Søren Berlev er kendt for sin kraftfulde og rytmiske trommespil,
+                    som var med til at definere Gasolin’s karakteristiske lyd.
+                    Han er stadig aktiv inden for musikbranchen og har en solid plads i dansk rockhistorie.
+
+                </p>
+            
+                <footer>
+                    <p>&copy; 2025 Søren "Charilie" Berlev. Alle rettigheder forbeholdes.</p>
+                </footer>
+    </div>
+
+</body>
+
+</html>
+
