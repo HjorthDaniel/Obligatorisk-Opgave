@@ -28,4 +28,33 @@ body {
 
 footer {
     margin-top: 20px; /* Hvis du vil have lidt afstand til indholdet */
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skaber en mørk skygge */
+}
+.header {
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skaber en mørk skygge */
+}
+
+.container {
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skaber en mørk skygge */
+}
+.about {
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skaber en mørk skygge */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #f7d200;
+    text-align: center;
 }
